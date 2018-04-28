@@ -13,7 +13,7 @@ app = Flask(__name__)
 def home_page():
 	return render_template('index.html')
 
-@app.route('/<name>')
+@app.route(' <name>')
 def profile(name):
 	new_name = str(name)+" like to eat apple"
 	return render_template('index.html', name=new_name)
